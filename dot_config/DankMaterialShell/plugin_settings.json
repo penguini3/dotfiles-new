@@ -1,0 +1,8 @@
+{
+  "dankActions": {
+    "enabled": false
+  },
+  "dankBatteryAlerts": {
+    "enabled": true
+  }
+}

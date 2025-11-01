@@ -1,0 +1,5 @@
+export BROWSER=firefox
+export TERM=alacritty
+export VISUAL=nvim
+export EDITOR=nvim
+export DISPLAY=:0
