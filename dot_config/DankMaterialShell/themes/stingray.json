@@ -17,5 +17,6 @@
   "surfaceContainerHighest": "#828282",
   "error": "#e92000",
   "warning": "#8d00cf",
-  "info": "#00FFb2"
+  "info": "#00FFb2",
+  "matugen_type": "scheme-expressive"
 }
