@@ -104,6 +104,7 @@ alias lt='eza --tree --level=2 --long --icons --git'
 alias lta='lt -a'
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 alias venv="source .venv/bin/activate"
+alias cd="z"
 
 # Installs and Updates
 
@@ -132,3 +133,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # TeX Live configuration
 export PATH="$PATH:/usr/local/texlive/2025/bin/x86_64-linux"
+
+# Cargo
+export PATH="/home/penguini3/.cargo:$PATH"
+
+# NVM
+source /usr/share/nvm/init-nvm.sh
