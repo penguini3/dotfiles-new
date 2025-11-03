@@ -86,6 +86,9 @@ binds {
     MOD+SHIFT+DOWN                      { move-window-down; }
     MOD+SHIFT+J                         { move-window-down; }
 
+    MOD+Q                               { consume-window-into-column; }
+    MOD+SHIFT+Q                         { expel-window-from-column; }
+
     MOD+HOME                            { focus-column-first; }
     MOD+END                             { focus-column-last; }
     MOD+CTRL+HOME                       { move-column-to-first; }

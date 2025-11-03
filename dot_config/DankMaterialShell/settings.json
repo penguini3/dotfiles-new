@@ -105,9 +105,18 @@
     }
   ],
   "dankBarCenterWidgets": [
-    "music",
-    "clock",
-    "weather"
+    {
+      "id": "music",
+      "enabled": true
+    },
+    {
+      "id": "clock",
+      "enabled": true
+    },
+    {
+      "id": "weather",
+      "enabled": true
+    }
   ],
   "dankBarRightWidgets": [
     {

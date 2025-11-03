@@ -3,24 +3,18 @@
     &.lightWallpaper {
       color-scheme: light !important;
     }
+
     &.darkWallpaper {
       color-scheme: dark !important;
     }
-    --newtab-background-color-secondary: color-mix(
-      in srgb,
+
+    --newtab-background-color-secondary: color-mix(in srgb,
       var(--newtab-wallpaper-color) 90%,
-      var(--newtab-contextual-text-primary-color)
-    ) !important;
-    --newtab-border-color: color-mix(
-      in srgb,
-      var(--newtab-wallpaper-color) 50%,
-      var(--newtab-contextual-text-primary-color)
-    ) !important;
-    --newtab-element-hover-color: color-mix(
-      in srgb,
+      var(--newtab-contextual-text-primary-color)) !important;
+    --newtab-border-color: #e20340;
+    --newtab-element-hover-color: color-mix(in srgb,
       var(--newtab-wallpaper-color) 70%,
-      var(--newtab-contextual-text-primary-color)
-    ) !important;
+      var(--newtab-contextual-text-primary-color)) !important;
 
     --newtab-weather-background-color: transparent !important;
   }
@@ -30,9 +24,11 @@
     .logo {
       display: none !important;
     }
+
     .wordmark {
       background: unset !important;
       width: unset !important;
+
       &::before {
         content: var(--tf-newtab-logo);
         white-space: pre-wrap;
@@ -46,11 +42,20 @@
 
   /* search bar */
   .search-wrapper {
+
     .search-handoff-button,
     input {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      justify-self: center;
+      justify-items: center;
+
+      background-color: #1f1a2d;
       border: var(--border-width) solid var(--newtab-border-color) !important;
       border-radius: var(--tf-rounding) !important;
       box-shadow: none !important;
+
       &:hover {
         background-color: var(--newtab-element-hover-color) !important;
       }
@@ -63,14 +68,17 @@
       box-shadow: none !important;
       border-radius: var(--tf-rounding) !important;
       border: var(--border-width) solid var(--newtab-border-color) !important;
+
       &:hover {
         background-color: var(--newtab-element-hover-color) !important;
       }
     }
+
     .top-site-icon {
       background-color: transparent !important;
     }
   }
+
   .context-menu {
     box-shadow: none !important;
     border-radius: var(--tf-rounding) !important;
@@ -81,12 +89,15 @@
   .card-outer {
     border-radius: var(--tf-rounding) !important;
     border: var(--border-width) solid var(--newtab-border-color);
+
     .card {
       border-radius: var(--tf-rounding) !important;
     }
+
     .card-preview-image-outer {
       border-radius: var(--tf-rounding) var(--tf-rounding) 0 0 !important;
     }
+
     .card-context {
       display: none !important;
     }
