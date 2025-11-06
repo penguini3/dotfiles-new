@@ -51,7 +51,7 @@
             "enabled": false
         },
         "AlwaysAnimate": {
-            "enabled": false
+            "enabled": true
         },
         "AlwaysExpandRoles": {
             "enabled": false
@@ -60,7 +60,11 @@
             "enabled": false
         },
         "AnonymiseFileNames": {
-            "enabled": false
+            "enabled": true,
+            "anonymiseByDefault": true,
+            "method": 0,
+            "randomisedLength": 7,
+            "consistent": "image"
         },
         "AppleMusicRichPresence": {
             "enabled": false
@@ -90,7 +94,10 @@
             "enabled": false
         },
         "BetterSettings": {
-            "enabled": false
+            "enabled": true,
+            "disableFade": true,
+            "eagerLoad": true,
+            "organizeMenu": true
         },
         "BetterUploadButton": {
             "enabled": false
@@ -132,7 +139,9 @@
             "enabled": false
         },
         "CrashHandler": {
-            "enabled": true
+            "enabled": true,
+            "attemptToPreventCrashes": true,
+            "attemptToNavigateToHome": false
         },
         "CtrlEnterSend": {
             "enabled": false
@@ -231,7 +240,8 @@
             "enabled": false
         },
         "ImplicitRelationships": {
-            "enabled": false
+            "enabled": true,
+            "sortByAffinity": true
         },
         "InvisibleChat": {
             "enabled": false
@@ -246,13 +256,22 @@
             "enabled": false
         },
         "LoadingQuotes": {
-            "enabled": false
+            "enabled": true,
+            "replaceEvents": false,
+            "enablePluginPresetQuotes": true,
+            "enableDiscordPresetQuotes": true,
+            "additionalQuotes": "",
+            "additionalQuotesDelimiter": "|"
         },
         "MemberCount": {
-            "enabled": false
+            "enabled": false,
+            "toolTip": true,
+            "memberList": true,
+            "voiceActivity": true
         },
         "MentionAvatars": {
-            "enabled": false
+            "enabled": true,
+            "showAtSymbol": true
         },
         "MessageClickActions": {
             "enabled": false
@@ -336,7 +355,8 @@
             "enabled": false
         },
         "PermissionsViewer": {
-            "enabled": false
+            "enabled": true,
+            "permissionsSortOrder": 0
         },
         "petpet": {
             "enabled": false
@@ -369,7 +389,13 @@
             "enabled": false
         },
         "RelationshipNotifier": {
-            "enabled": false
+            "enabled": true,
+            "offlineRemovals": true,
+            "groups": true,
+            "servers": true,
+            "friends": true,
+            "friendRequestCancels": true,
+            "notices": true
         },
         "ReplaceGoogleSearch": {
             "enabled": false
@@ -414,7 +440,9 @@
             "enabled": false
         },
         "ShowHiddenChannels": {
-            "enabled": false
+            "enabled": true,
+            "showMode": 0,
+            "hideUnreads": true
         },
         "ShowHiddenThings": {
             "enabled": false
@@ -465,10 +493,11 @@
             "enabled": false
         },
         "TypingIndicator": {
-            "enabled": false
+            "enabled": true
         },
         "TypingTweaks": {
-            "enabled": false
+            "enabled": true,
+            "alternativeFormatting": true
         },
         "Unindent": {
             "enabled": false
@@ -480,7 +509,7 @@
             "enabled": false
         },
         "UserMessagesPronouns": {
-            "enabled": false
+            "enabled": true
         },
         "UserVoiceShow": {
             "enabled": false
@@ -543,6 +572,15 @@
         "Settings": {
             "enabled": true,
             "settingsLocation": "aboveNitro"
+        },
+        "DisableDeepLinks": {
+            "enabled": true
+        },
+        "SupportHelper": {
+            "enabled": true
+        },
+        "WebContextMenus": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -555,6 +593,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1762213013993
+        "settingsSyncVersion": 1762281902333
     }
 }

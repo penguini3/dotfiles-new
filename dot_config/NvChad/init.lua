@@ -28,6 +28,7 @@ require("lazy").setup({
 -- mini setups
 require("mini.notify").setup()
 require("mini.indentscope").setup { symbol = "│" }
+require("mini.icons").setup()
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
