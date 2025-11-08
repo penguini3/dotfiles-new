@@ -27,8 +27,11 @@ return {
         "vimdoc",
         "html",
         "css",
+        "markdown",
+        "markdown_inline",
+        "yaml",
       },
-      ignore_install = { "latex " },
+      ignore_install = { "latex" },
     },
   },
 }
