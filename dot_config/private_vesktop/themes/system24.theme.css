@@ -196,7 +196,7 @@ body {
   /* border colors */
   --border-light: var(--red-1);
   /* general light border color */
-  --border: var(--red-2);
+  --border: #1f1a2d;
   /* general normal border color */
   --border-hover: var(--accent-2);
   /* border color of panels when hovered */
