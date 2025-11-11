@@ -110,7 +110,7 @@ alias cd="z"
 
 alias add="sudo pacman -S"
 alias remove="sudo pacman -Rs"
-alias update="sudo pacman -Syu && paru"
+alias update="topgrade"
 
 
 # Volume Control

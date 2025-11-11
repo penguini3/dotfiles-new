@@ -10,19 +10,6 @@ background = '#0e487c'
 text = '#1c110e'
 cursor = '#a1c9ff'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 [colors.normal]
 black   = '#1c110e'
 red     = '#e64c46'
