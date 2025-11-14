@@ -13,6 +13,10 @@ output "eDP-1" {
     variable-refresh-rate
 }
 
+output "HDMI-A-1" {
+  mode "1920x1080"
+}
+
 gestures {
     hot-corners {
         off
@@ -22,18 +26,22 @@ gestures {
 // ────────────── Input Configuration ──────────────
 
 input {
+
     keyboard {
         xkb {
           layout "us" // Enables US layout
         }
         numlock
     }
+
     touchpad {
       tap // Enables tap-to-click
       natural-scroll // Enables natural scrolling
     }
+
     mouse {
     }
+
     trackpoint {
     }
 
@@ -46,16 +54,10 @@ layout {
   // Set gaps around windows in logical pixels.
   gaps 5
   background-color "transparent"
-  // When to center a column when changing focus, options are:
-  // - "never", default behavior, focusing an off-screen column will keep at the left
-  //   or right edge of the screen.
-  // - "always", the focused column will always be centered.
-  // - "on-overflow", focusing a column will center it if it doesn't fit
-  //   together with the previously focused column.
   center-focused-column "never"
 
   preset-column-widths {
-      proportion 0.75
+      proportion 0.25
       proportion 0.5
       proportion 0.75
       proportion 1.0
@@ -89,9 +91,6 @@ layout {
       spread 5
       offset x=0 y=5
       color "#0007"
-  }
-
-  struts {
   }
 }
 
@@ -170,10 +169,6 @@ animations {
 }
 
 // ────────────── Window Rules ──────────────
-window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
 
 window-rule {
     match app-id=r#"^org\.gnome\."#
@@ -247,7 +242,7 @@ binds {
   MOD+Space                           hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
   MOD+V                               hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
   MOD+M                               hotkey-overlay-title="Task Manager" { spawn "dms" "ipc" "call" "processlist" "toggle"; }
-  MOD+N                               hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+  MOD+N                               hotkey-overlay-title="NeoVim" { spawn "alacritty" "-e" "nv"; }
   Mod+X                               hotkey-overlay-title="Power Menu" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
   Mod+C                               hotkey-overlay-title="Control Center" { spawn "dms" "ipc" "call" "control-center" "toggle"; }
   Mod+Y                               hotkey-overlay-title="Browse Wallpapers" { spawn "dms" "ipc" "call" "dankdash" "wallpaper"; }
