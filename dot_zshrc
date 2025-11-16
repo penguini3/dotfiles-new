@@ -104,7 +104,7 @@ alias setvol="pactl set-sink-volume @DEFAULT_SINK@"
 
 # Aliases for multi NVIM setup
 
-alias lv="NVIM_APPNAME=LazyVim nvim"
+alias lv="/home/penguini3/.local/bin/lvim"
 alias nv="NVIM_APPNAME=NvChad nvim"
 
 # Use bitwarden as SSH agent
@@ -124,3 +124,6 @@ export PATH="/home/penguini3/.cargo:$PATH"
 
 # NVM
 source /usr/share/nvm/init-nvm.sh
+
+export GTK_THEME=Adwaita:dark
+export QT_QPA_PLATFORMTHEME=gtk3
